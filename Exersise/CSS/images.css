@@ -1,0 +1,96 @@
+section.main h2 {
+    font-size: 1.5rem;
+    padding-top: 30px;
+    margin: 10px;
+}
+section.main p {
+    font-family: cursive;
+    padding: 5px 20px;
+    text-align: justify;
+    font-size: 1rem;
+}
+section.main div {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(10, auto);
+    margin: 20px 30px;
+}
+section.main div.image-display {
+    display: grid;
+    grid-template-columns: 1fr 50vw 1fr;
+    grid-template-rows: 50vw;
+    margin-bottom: 40px;
+}
+section.main div.image-display span {
+    position: relative;
+}
+section.main div.image-display span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: image-display 5s linear 0s 1;
+}
+section.main div.image-display span img:last-child {
+    animation: display-last 5s linear 45s 1 forwards;
+}
+section.main div img {
+    display: inline;
+    animation: image-bar 5s ease 0s 1;
+}
+section.main div img:hover {
+    transform: scale(1.05);
+}
+@keyframes image-bar {
+    0% {
+        outline: 0px solid black;
+        transform: scale(1);
+    }
+    50% {
+        outline: 2px solid black;
+        transform: scale(1.05);
+    }
+    100% {
+        outline: 0px solid black;
+        transform: scale(1);
+    }
+}
+@keyframes image-display {
+    0% {
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes display-last {
+    0% {
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (min-width: 1288px) {
+    section.main div.image-display {
+        display: grid;
+        grid-template-columns: 1fr 30vw 1fr;
+        grid-template-rows: 30vw;
+        margin-bottom: 40px;
+    }
+    section.main h2 {
+        font-size: 2rem;
+    }
+    section.main p {
+        font-size: 1.1rem;
+    }
+}

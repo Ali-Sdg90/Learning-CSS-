@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body class="site-background">
+        <link
+            href="https://fonts.googleapis.com/css?family=Lobster"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <style>
+            :root {
+                --keremi: bisque;
+            }
+            .grid1-section {
+                display: grid;
+                background-color: gray;
+                grid-template-columns: 2fr 10% 50px 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 10px 5px;
+                grid-row-gap: 10px;
+                grid-column-gap: 5px;
+            }
+            .grid1-1 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: aqua;
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid1-2 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(221, 255, 0);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid1-3 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(255, 0, 0);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid1-4 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(4, 0, 255);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid1-5 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(255, 0, 208);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid1-6 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(187, 0, 255);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid1-7 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(0, 255, 162);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid1-8 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(255, 123, 0);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid2-section {
+                display: grid;
+                background-color: gray;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 5px 5px;
+            }
+            .grid2-1 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: aqua;
+                margin: 0px;
+                font-size: 40px;
+                padding-left: 10px;
+            }
+            .grid2-2 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(221, 255, 0);
+                margin: 0px;
+                font-size: 40px;
+                padding-left: 10px;
+                grid-column: 2/4;
+            }
+            .grid2-3 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(255, 0, 0);
+                margin: 0px;
+                font-size: 40px;
+                padding-left: 10px;
+                grid-row: 2/4;
+            }
+            .grid2-4 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(4, 0, 255);
+                margin: 0px;
+                font-size: 40px;
+                padding-left: 10px;
+            }
+            .grid2-5 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(255, 0, 208);
+                margin: 0px;
+                font-size: 40px;
+                padding-left: 10px;
+            }
+            .grid2-6 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(187, 0, 255);
+                margin: 0px;
+                font-size: 40px;
+                padding-left: 10px;
+            }
+            .grid4-1 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: aqua;
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+                grid-area: header;
+            }
+            .grid4-2 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(221, 255, 0);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+                grid-area: ad;
+            }
+            .grid4-3 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(255, 0, 0);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid4-4 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(4, 0, 255);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+                grid-area: footer;
+            }
+            .grid4-5 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(255, 0, 208);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .grid4-6 {
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(187, 0, 255);
+                margin: 0px;
+                font-size: 40px;
+                padding: 10px;
+            }
+            .var-color {
+                --Variable-color: rgb(255, 0, 0);
+                color: var(--Variable-color, green);
+            }
+            [type="radio"] {
+                margin: 10px 60px 15px 10px;
+            }
+            [type="checkbox"] {
+                margin: 10px 0px 15px 20px;
+            }
+            #weather {
+                color: var(--keremi);
+                background-color: darkslategrey;
+                padding: 20px 0px 30px 25px;
+            }
+            .description {
+                --keremi: aquamarine;
+                color: var(--keremi);
+                font-size: 30px;
+                padding: 20px;
+                margin: 10px;
+                font-family: monospace;
+            }
+            .text-science-background {
+                border-style: solid;
+                border-color: black;
+                border-width: 10px;
+                background-color: rgb(126, 0, 0);
+            }
+            .text-science-1 {
+                border-style: solid;
+                border-color: black;
+                border-width: 10px;
+                background-color: orange;
+                padding: 20px;
+                margin: 10px;
+            }
+            .text-science-2 {
+                border-style: solid;
+                border-color: black;
+                border-width: 10px;
+                background-color: rgb(83, 57, 255);
+                padding: 5px;
+                margin: 30px;
+            }
+            .text-science-3 {
+                border-style: solid;
+                border-color: black;
+                border-width: 10px;
+                background-color: rgb(26, 255, 0);
+                padding: 0px;
+                margin: -10px;
+            }
+            .text-science-4 {
+                border-style: solid;
+                border-color: black;
+                border-width: 10px;
+                background-color: rgb(255, 57, 232);
+                padding: 70px 0px 0px 40px;
+                margin: 30px;
+            }
+            .text-science-5 {
+                border-style: solid;
+                border-color: #000000;
+                border-width: 10px;
+                background-color: rgb(255, 252, 57);
+                padding: 10px 10px 10px 10px;
+                margin: 30px 200px 60px 10px;
+            }
+            .site-background {
+                background-color: rgba(0, 0, 0, 0.907);
+            }
+            #silver-background {
+                background-color: silver;
+            }
+            .gold-background {
+                background-color: gold;
+            }
+            .bigger-img {
+                width: 300px;
+            }
+            .circle-img {
+                border-width: 10px;
+                border-color: rgb(165, 0, 165);
+                border-radius: 50%;
+                border-style: solid;
+            }
+            .orange-border {
+                border-color: orange;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 80px;
+            }
+            .smaller-img {
+                width: 200px;
+            }
+            .red-text {
+                color: #ff0000;
+                font-size: 80px;
+                font-family: Lobster, monospace;
+            }
+            p {
+                font-size: 30px;
+                font-family: monospace;
+            }
+            .grid3-section {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                justify-items: center;
+                align-items: center;
+            }
+            .grid4-section {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(200px, 1fr));
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-areas:
+                    "header header header"
+                    "content content content"
+                    ". ad ad"
+                    "footer footer footer";
+            }
+            .grid3-padding {
+                padding-left: 50%;
+                padding-right: 50%;
+            }
+            .grid5-section {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-rows: repeat(3, 1fr);
+            }
+            .grid6-section {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-template-rows: repeat(3, 1fr);
+            }
+        </style>
+        <h2 class="red-text">Im Red And Big And Lobstery!</h2>
+        <img
+            class="smaller-img orange-border"
+            src="img/css.png"
+            alt="css logo"
+        />
+        <p
+            class="gold-background"
+            id="silver-background"
+            style="color: rgb(36, 0, 74)"
+        >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed totam
+            repudiandae aliquid explicabo suscipit exercitationem aliquam nisi
+            temporibus facilis odit?
+        </p>
+        <img
+            class="bigger-img circle-img"
+            src="img/css-is-awesome.png"
+            alt="css-is-awesome"
+        />
+        <br /><br /><br /><br />
+        <hr />
+        <br />
+        <ul class="description">
+            <li>padding => ارتفاع خط</li>
+            <li>margin => فاصله تا مرز بقیه چیزا</li>
+        </ul>
+        <br />
+        <section class="text-science-background">
+            <p class="text-science-1">padding: 20px - margin: 10px</p>
+            <p class="text-science-2">padding: 5px - margin: 30px</p>
+            <p class="text-science-3">padding: 0px - margin: -10px</p>
+            <br />
+            <hr />
+            <p class="text-science-4">padding: 70px 0px 0px 40px</p>
+            <p class="text-science-5">margin: 30px 200px 60px 10px</p>
+        </section>
+        <br />
+        <hr />
+        <br />
+        <section id="weather">
+            <p>How is the weather?</p>
+            <p>
+                Good<input name="radio" type="radio" />Bad<input
+                    name="radio"
+                    type="radio"
+                />
+            </p>
+            <p>Do you enjoy the weather?<input type="checkbox" /></p>
+        </section>
+        <hr />
+        <p class="var-color">Variable Color</p>
+        <hr />
+        <p style="color: rgb(238, 199, 199)">Grid:</p>
+        <section class="grid1-section">
+            <p class="grid1-1">1</p>
+            <p class="grid1-2">2</p>
+            <p class="grid1-3">3</p>
+            <p class="grid1-4">4</p>
+            <p class="grid1-5">5</p>
+            <p class="grid1-6">6</p>
+            <p class="grid1-7">7</p>
+            <p class="grid1-8">8</p>
+        </section>
+        <ol
+            style="
+                font-size: 30px;
+                background-color: darkgrey;
+                font-family: monospace;
+                padding: 20px 0px 20px 60px;
+            "
+        >
+            <li>2fr</li>
+            <li>10%</li>
+            <li>50px</li>
+            <li>1fr</li>
+        </ol>
+        <section class="grid2-section">
+            <p class="grid2-1">1</p>
+            <p class="grid2-2">2 - grid-column: 2/4</p>
+            <p class="grid2-3">3 - grid-row: 2/4</p>
+            <p class="grid2-4">4</p>
+            <p class="grid2-5">5</p>
+            <p class="grid2-6">6</p>
+        </section>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <p style="color: white">justify-items & align-items</p>
+        <section class="grid3-section">
+            <p class="grid1-1 grid3-padding">1</p>
+            <p class="grid1-2 grid3-padding">2</p>
+            <p class="grid1-3 grid3-padding">3</p>
+            <p class="grid1-4 grid3-padding">4</p>
+            <p class="grid1-5 grid3-padding">5</p>
+            <p class="grid1-6 grid3-padding">6</p>
+        </section>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <p style="color: white">grid-area</p>
+        <section class="grid4-section">
+            <p class="grid4-1">1</p>
+            <p class="grid4-2">2</p>
+            <p class="grid4-3">3</p>
+            <p class="grid4-4">4</p>
+            <p class="grid4-5">5</p>
+            <p class="grid4-6">6</p>
+        </section>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <p style="color: white">auto-fill</p>
+        <section class="grid5-section">
+            <p class="grid1-1 grid3-padding">1</p>
+            <p class="grid1-2 grid3-padding">2</p>
+            <p class="grid1-3 grid3-padding">3</p>
+            <p class="grid1-4 grid3-padding">4</p>
+            <p class="grid1-5 grid3-padding">5</p>
+            <p class="grid1-6 grid3-padding">6</p>
+        </section>
+        <br />
+        <hr />
+        <br />
+        <p style="color: white">auto-fit</p>
+        <section class="grid6-section">
+            <p class="grid1-1 grid3-padding">1</p>
+            <p class="grid1-2 grid3-padding">2</p>
+            <p class="grid1-3 grid3-padding">3</p>
+            <p class="grid1-4 grid3-padding">4</p>
+            <p class="grid1-5 grid3-padding">5</p>
+            <p class="grid1-6 grid3-padding">6</p>
+        </section>
+    </body>
+</html>
