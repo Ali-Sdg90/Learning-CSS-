@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+}
+html {
+    background: rgb(26, 26, 26);
+    color: white;
+}
+#emoji {
+    font-size: 2rem;
+    color: red;
+    text-decoration: double;
+    text-transform: capitalize;
+    font-family: cursive;
+    font-style: normal;
+    letter-spacing: 4px;
+}
+/* code{
+    background: gray;
+} */
+#emoji:hover {
+    font-style: oblique;
+}
+form {
+    background: rgb(84, 84, 84);
+    border-radius: 5px;
+}
+#AZAR7 {
+    padding-top: 10px;
+}
+#form-css input {
+    transition: 0.4s;
+}
+#form-css input:nth-child(2) {
+    width: 376px;
+}
+#form-css input:required {
+    background: red;
+}
+#form-css input:optional {
+    background: rgb(255, 221, 0);
+}
+#form-css input:invalid {
+    background: rgb(8, 0, 255);
+}

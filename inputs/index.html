@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Web tutorials" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Ali Sad" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>HTML Inputs</title>
+    </head>
+    <body>
+        <p>HELLO! <span id="emoji">🙂</span></p>
+        <br />
+        <form>
+            <label for="inp1">user-name:</label>
+            <input type="text" name="user-name" id="inp1" />
+            <br />
+            <label for="inp2">password:</label>
+            <input type="text" name="password" id="inp2" />
+        </form>
+        <form>
+            <input type="radio" name="radio-inp" id="inp3" />
+            <label for="inp3">HTML</label><br />
+            <input type="radio" name="radio-inp" id="inp4" />
+            <label for="inp4">CSS</label><br />
+            <input type="radio" name="radio-inp" id="inp5" />
+            <label for="inp5">JavaScript</label><br />
+        </form>
+        <form target="_blank">
+            <input type="checkbox" name="ch1" id="inp6" />
+            <label for="inp6">HTML</label><br />
+            <input type="checkbox" name="ch2" id="inp7" />
+            <label for="inp7">CSS</label><br />
+            <input type="checkbox" name="ch3" id="inp8" />
+            <label for="inp8">JavaScript</label><br />
+        </form>
+        <form>
+            <select name="first-select" id="inp9" size="3" multiple>
+                <option value="val1">hi-1</option>
+                <option value="val2">hi-2</option>
+                <option value="val3" selected>hi-3</option>
+                <option value="val4">hi-4</option>
+                <option value="val5">hi-5</option>
+                <option value="val6">hi-6</option>
+            </select>
+        </form>
+        <form>
+            <textarea
+                name="AZADI"
+                id="AZAR7"
+                cols="60"
+                rows="5"
+                placeholder="hame jashn migirim yeroozi azadimoono..."
+            ></textarea>
+        </form>
+        <form>
+            <label for="plsHELP">Password :</label>
+            <input type="password" name="fuckJA" id="plsHELP" />
+            <input type="submit" value="Submitt" />
+            <input type="reset" />
+        </form>
+        <form>
+            <input
+                type="color"
+                name="MahsaAmini"
+                id="FuckMyLife"
+                value="#ff0000"
+            />
+            <input type="reset" />
+        </form>
+        <form>
+            <fieldset>
+                <legend>legend</legend>
+                <label for="fieldset1">Username :</label>
+                <input type="text" name="fieldset1" id="fieldset1" required />
+                <br />
+                <label for="fieldset2">Password :&nbsp;</label>
+                <input
+                    type="password"
+                    name="fieldset2"
+                    id="fieldset2"
+                    required
+                />
+                <br />
+                <input type="submit" />
+                <input type="reset" />
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Date Inpurts</legend>
+                <label for="brth-date"> type="date" : </label>
+                <input type="date" name="brth-date" id="brth-date" />
+                <br />
+                <label for="brth-date2"> type="datetime-local" : </label>
+                <input
+                    type="datetime-local"
+                    name="brth-date2"
+                    id="brth-date2"
+                />
+                <br />
+                <label for="brth-date3"> type="month" : </label>
+                <input type="month" name="brth-date3" id="brth-date3" />
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Misc</legend>
+                <label for="file-inp">type="file" : </label>
+                <input type="file" name="file-inp" id="file-inp" />
+                <br />
+                <label for="url-inp">type="url" : </label>
+                <input type="url" name="url-inp" id="url-inp" />
+                <br />
+                <label for="readonly-inp">readonly : </label>
+                <input
+                    type="text"
+                    name="readonly-inp"
+                    id="readonly-inp"
+                    value="you can't change me!"
+                    readonly
+                />
+                <br />
+                <label for="maxlength-inp">maxlength="4" : </label>
+                <input
+                    type="text"
+                    name="maxlength-inp"
+                    id="maxlength-inp"
+                    maxlength="4"
+                    placeholder="- - - -"
+                />
+                <br />
+                <label for="multiple-inp">multiple : </label>
+                <input
+                    type="file"
+                    name="multiple-inp"
+                    id="multiple-inp"
+                    multiple
+                />
+                <br />
+                <label for="step-inp">step="5" : </label>
+                <input type="number" name="step-inp" id="step-inp" step="5" />
+                <br />
+                <label for="email-inp">type="email" : </label>
+                <input type="email" name="email-inp" id="email-inp" />
+                <br />
+                <label for="disabled-inp">disabled : </label>
+                <input
+                    type="submit"
+                    value="Aloha"
+                    name="disabled-inp"
+                    disabled
+                />
+                <br />
+
+                <input type="submit" />
+            </fieldset>
+        </form>
+        <form>
+            <div id="form-css">
+                <form>
+                    <label for="required-inp" style="color: red"
+                        >:required</label
+                    >
+                    <input
+                        type="text"
+                        name="required-inp"
+                        id="required-inp"
+                        required
+                    />
+                    <input type="submit" value="submit" />
+                </form>
+                <form>
+                    <label for="optional-inp" style="color: rgb(255, 221, 0)"
+                        >:optional</label
+                    >
+                    <input type="text" name="optional-inp" id="optional-inp" />
+                    <input type="submit" value="submit" />
+                </form>
+                <form>
+                    <label for="invalid-inp" style="color: rgb(8, 0, 255)"
+                        >&nbsp :invalid</label
+                    >
+                    <input
+                        type="number"
+                        name="invalid-inp"
+                        id="invalid-inp"
+                        max="10"
+                        min="0"
+                    />
+                    <input type="submit" value="submit" />
+                </form>
+            </div>
+        </form>
+    </body>
+</html>
