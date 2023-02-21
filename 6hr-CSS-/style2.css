@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: white;
+}
+body {
+    background: rgb(58, 58, 58);
+    height: 100vh;
+    height: 100svh;
+    width: 100%;
+}
+h1 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: pink;
+    letter-spacing: 18px;
+    font-weight: 900;
+    text-shadow: -2px 0 rgb(255, 0, 251), 2px 0 rgb(255, 0, 0),
+        0 1.3px rgb(61, 51, 0), 0 -1.3px rgb(61, 51, 0), 0 0 10px rgba(0, 0, 0, 0.301);
+}
+#min-test {
+    text-align: justify;
+    border: 2px solid pink;
+    padding: 10px 5px;
+    width: min(1000px, 90%);
+    margin: auto;
+}
+#min-test h2:first-child {
+    font-family: sans-serif;
+}
+.red {
+    color: red;
+}
+
+#play-w-min-max {
+    margin: auto;
+    text-align: justify;
+    width: min(1000px, 90%);
+    border: max(8px, 1vw) solid hotpink;
+    padding: max(20px, 5vh);
+    border-radius: min(30px, 0.5vw);
+    font-size: max(25px, 4vh);
+    box-shadow: 0 0 max(10px, 3vw) rgb(255, 0, 208);
+}
+pre {
+    margin: 20px 0;
+    background: rgba(44, 44, 44, 0.474);
+    border: 1px solid rgb(27, 0, 0);
+    padding: 10px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#imp-note {
+    border: 2px solid red;
+    background: rgb(138, 0, 0);
+    border-radius: 5px;
+    padding: 20px;
+    width: min(1000px, 90%);
+    margin: auto;
+}

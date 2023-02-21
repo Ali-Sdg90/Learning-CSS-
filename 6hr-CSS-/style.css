@@ -2879,7 +2879,7 @@ div.w3-text-shadow3:hover {
     display: flex;
     width: 100px;
     height: 40px;
-    background: rgb(44, 157, 44);
+    background: rgb(44, 157, 44); /* max amount of color box in vs! */
     font-size: 22px;
     padding: 8px;
     border-radius: 5px;
@@ -3063,6 +3063,25 @@ audio {
     width: 50vw;
     display: block;
     margin: auto;
+}
+#next-page {
+    border: 3px solid darkblue;
+    border-radius: 6px;
+    background: lightblue;
+    color: blue;
+    cursor: pointer;
+    margin: 50px auto;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    display: block;
+    box-shadow: inset 0 0 5px blue;
+    transition: 0.2s;
+}
+#next-page:hover {
+    border: 2px solid orangered;
+    background: orange;
+    color: orangered;
 }
 @keyframes loading-bar {
     100% {
