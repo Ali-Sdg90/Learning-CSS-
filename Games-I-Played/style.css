@@ -1,0 +1,71 @@
+* {
+    transition: 0.1s;
+    cursor: default;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+table {
+    display: inline-block;
+    margin: auto;
+    border: 3px solid rgba(255, 255, 255, 0.562);
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(20, 20, 20);
+}
+h2 {
+    font-size: 29px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    text-shadow: 2px 0 2px rgba(0, 0, 255, 0.7), -2px 0 2px rgba(255, 0, 0, 0.6);
+}
+div {
+    display: flex;
+    margin: auto;
+}
+body {
+    background: linear-gradient(to top, rgb(27, 27, 27), rgb(58, 58, 58));
+    color: aliceblue;
+}
+td,
+th {
+    border: 2px solid rgba(255, 255, 255, 0.775);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+td {
+    border: 2px solid rgba(255, 255, 255, 0.562);
+    background: rgb(38, 38, 38);
+}
+td:first-child:hover {
+    color: gold;
+}
+td:hover {
+    background: rgb(58, 58, 58);
+    color: gold;
+    text-shadow: 0 0 2px currentColor;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.31);
+}
+.Endless:hover {
+    color: rgb(255, 81, 232);
+}
+.N-Finished:hover {
+    color: rgb(169, 77, 255);
+}
+.Online:hover {
+    color: rgb(75, 255, 249);
+}
+.Finished:hover {
+    color: rgb(255, 135, 65);
+}
+.Done:hover {
+    color: aquamarine;
+}
+.V-Cool:hover {
+    color: rgb(255, 58, 58);
+}
+.Cool:hover {
+    color: rgb(255, 159, 50);
+}
+.Hard:hover {
+    color: rgb(55, 255, 78);
+}
