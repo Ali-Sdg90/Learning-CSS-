@@ -27,6 +27,7 @@ html {
 form {
     background: rgb(84, 84, 84);
     border-radius: 5px;
+    padding-bottom: 5px;
 }
 #AZAR7 {
     padding-top: 10px;

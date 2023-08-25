@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+body {
+    background-color: #232323;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+:root {
+    --primary-color: coral;
+    --secondary-color: rgb(249, 112, 62);
+}
+
+.pingpong {
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.438));
+    height: 500px;
+    border: 1px solid white;
+    width: 500px;
+    position: relative;
+
+    transform: scale(0.8);
+    top: -40px;
+}
+.main-inf-platform {
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    position: absolute;
+    background: var(--primary-color);
+    z-index: 2;
+}
+.platform1-top {
+    width: 100px;
+    height: 25px;
+    transform: rotate(45deg);
+    top: 368px;
+    left: 78px;
+}
+.platform2-top {
+    width: 100px;
+    height: 25px;
+    transform: rotate(-45deg);
+    top: 368px;
+    left: 317px;
+}
+.platform1-left {
+    background: var(--secondary-color);
+    width: 100px;
+    height: 15px;
+    transform: rotate(45deg) skewX(46deg);
+    top: 392px;
+    left: 69px;
+}
+.platform2-left {
+    background: var(--secondary-color);
+    width: 100px;
+    height: 15px;
+    transform: rotate(-45deg) skewX(-45deg);
+    top: 392px;
+    left: 326px;
+}
+.platform1-right {
+    background: rgb(190, 81, 41);
+    width: 18px;
+    height: 21px;
+    transform: rotate(0deg) skewY(-45deg);
+    top: 416px;
+    left: 154px;
+    z-index: 0;
+}
+.platform2-right {
+    background: rgb(190, 81, 41);
+    width: 18px;
+    height: 21px;
+    transform: rotate(0deg) skewY(45deg);
+    top: 415px;
+    left: 323px;
+    z-index: 0;
+}
+.platform1-tt {
+    width: 53px;
+    height: 39px;
+    transform: rotate(45deg);
+    top: 323px;
+    left: 106px;
+    z-index: 3;
+    border-bottom: none;
+}
+.platform2-tt {
+    width: 53px;
+    height: 39px;
+    transform: rotate(45deg);
+    transform: rotate(-45deg);
+    top: 322px;
+    left: 336px;
+    z-index: 3;
+    border-bottom: none;
+}
+.platform1-td {
+    background: var(--secondary-color);
+    width: 31px;
+    height: 21px;
+    transform: rotate(0deg) skewY(-45deg);
+    top: 362px;
+    left: 134px;
+    z-index: 1;
+}
+.platform2-td {
+    background: var(--secondary-color);
+    width: 31px;
+    height: 21px;
+    transform: rotate(0deg) skewY(-45deg);
+    transform: rotate(0deg) skewY(45deg);
+    top: 361px;
+    left: 329px;
+    z-index: 1;
+}
+.middle-back {
+    background: rgba(249, 112, 62, 0.464);
+    width: 152px;
+    height: 20px;
+    top: 407px;
+    left: 172px;
+}
+.middle-front {
+    background: rgba(249, 112, 62, 0.464);
+    width: 187px;
+    height: 21px;
+    top: 424px;
+    left: 154px;
+    z-index: 5;
+}
+.main-inf-ball {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, red 50%, rgba(0, 0, 0, 0) 55%);
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+}
+.the-ball1 {
+    top: 303px;
+    left: 102px;
+    animation: ball1 0.8s ease-out infinite;
+}
+.the-ball2 {
+    top: 300px;
+    left: 324px;
+    animation: ball2 0.8s ease-out 1.6s infinite reverse;
+}
+.the-ball3 {
+    width: 40px;
+    height: 40px;
+    top: 410px;
+    left: 314px;
+    z-index: 1;
+    animation: ball3 0.8s ease-out 0.8s infinite;
+}
+@keyframes ball3 {
+    0% {
+        top: 408px;
+        left: 310px;
+    }
+    100% {
+        top: 408px;
+        left: 137px;
+    }
+}
+@keyframes ball1 {
+    0% {
+        top: 300px;
+        left: 108px;
+    }
+    100% {
+        top: 120px;
+        left: 219px;
+    }
+}
+@keyframes ball2 {
+    0% {
+        top: 300px;
+        left: 319px;
+    }
+    100% {
+        top: 120px;
+        left: 219px;
+    }
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    text-shadow: 3px 0 rgba(98, 0, 255, 0.25), -3px 0 rgba(255, 0, 0, 0.25);
+}
+
+.css-sections {
+    display: grid;
+    grid-template-areas:
+        "Exersise   the6hr     GIP"
+        "Inputs     the6hr     First-CSS";
+
+    /* border: 1px solid red; */
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 79vh;
+    height: 74vh;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.css-sections a {
+    position: relative;
+}
+
+.Exersise {
+    grid-area: Exersise;
+}
+
+.the6hr {
+    grid-area: the6hr;
+    /* width: 50vw; */
+}
+.the6hr .section-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* border: 1px solid red; */
+    transform: translate(-50%, -50%);
+}
+
+.GIP {
+    grid-area: GIP;
+}
+
+.Inputs {
+    grid-area: Inputs;
+}
+
+.First-CSS {
+    grid-area: First-CSS;
+}
+
+.css-section {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 6px;
+    opacity: 0.85;
+    transition: opacity 1.3s;
+}
+
+.css-section:hover {
+    transition: opacity 0.2s;
+    opacity: 1;
+}
+
+.css-section p {
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.the6hr p {
+    margin-bottom: 30px;
+}
+
+footer {
+    display: block;
+    background-color: #131313;
+    /* line-height: 50px; */
+    line-height: 7vh;
+    text-align: center;
+    /* position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0; */
+}
+
+footer a {
+    background-color: transparent;
+}
