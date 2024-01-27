@@ -21,7 +21,8 @@ h1 {
     letter-spacing: 18px;
     font-weight: 900;
     text-shadow: -2px 0 rgb(255, 0, 251), 2px 0 rgb(255, 0, 0),
-        0 1.3px rgb(61, 51, 0), 0 -1.3px rgb(61, 51, 0), 0 0 10px rgba(0, 0, 0, 0.301);
+        0 1.3px rgb(61, 51, 0), 0 -1.3px rgb(61, 51, 0),
+        0 0 10px rgba(0, 0, 0, 0.301);
 }
 #min-test {
     text-align: justify;
