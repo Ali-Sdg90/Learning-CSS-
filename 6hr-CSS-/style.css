@@ -3083,6 +3083,25 @@ audio {
     background: orange;
     color: orangered;
 }
+
+.adv-css {
+    background-color: #222;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: gray;
+    padding: 5px 10px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.adv-css:hover {
+    background-color: #292828;
+}
+.adv-css:active {
+    background-color: #1a1a1a;
+}
+
 @keyframes loading-bar {
     100% {
         background-position: -335px;
