@@ -210,7 +210,7 @@ article section.main {
 article section.footer {
     background: url("../img/99.png") bottom;
     overflow: hidden;
-    height: 194px;
+    height: 174px;
     outline: 2px solid black;
 }
 .footer h2 {

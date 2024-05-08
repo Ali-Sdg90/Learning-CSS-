@@ -6,6 +6,10 @@
     cursor: default;
 }
 
+h1 {
+    font-family: sans-serif;
+}
+
 body {
     background-color: #232323;
     color: white;
@@ -333,4 +337,5 @@ h1 {
     background-color: #131313;
     line-height: 7vh;
     text-align: center;
+    font-family: sans-serif;
 }

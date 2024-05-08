@@ -1,8 +1,8 @@
 * {
-    transition: 0.1s;
     cursor: default;
     text-transform: capitalize;
     font-size: 20px;
+    font-family: sans-serif;
 }
 table {
     display: inline-block;
@@ -35,11 +35,13 @@ th {
 td {
     border: 2px solid rgba(255, 255, 255, 0.562);
     background: rgb(38, 38, 38);
+    transition: 1.5s;
 }
 td:first-child:hover {
     color: gold;
 }
 td:hover {
+    transition: 0.15s;
     background: rgb(58, 58, 58);
     color: gold;
     text-shadow: 0 0 2px currentColor;
