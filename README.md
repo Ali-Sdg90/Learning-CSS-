@@ -1,28 +1,56 @@
-<h1>My CSS Learning Process</h1>
+<h1>My CSS Learning Playground</h1>
 <p>
-    This repository contains my learning process for CSS. I've created 4 folders
-    to organize my progress as I go through the materials and practice my
-    skills.
+    Welcome to my CSS learning playground! This is where I practice and play
+    around with CSS to improve my skills. Below, I'll walk you through what
+    you'll find in this repository:
 </p>
-<h2>Getting Started</h2>
-
+<img src="./Repo-hub/images/readme-image.png" alt="Repository-HUB-Image">
+<h2>Folders:</h2>
+<h3>6hr-css-</h3>
 <p>
-    To get started, simply clone the repository to your local machine by running
-    the following command in your terminal:
+    In this folder, you'll find my main CSS learning journey. It's a big CSS
+    file where I've gathered around 3600 lines of code as I've learned new CSS
+    techniques.
 </p>
-<pre><code>git clone https://github.com/Ali-Sdg90/Learning-CSS-.git</code></pre>
+<h3>Exercise</h3>
 <p>
-    Once you have cloned the repository, navigate to the root directory and open
-    each folder in your preferred code editor. Open the
-    <code>index.html</code> file in each folder to see the HTML and CSS code in
-    action. Feel free to experiment with the code and make changes to improve
-    your own CSS skills.
+    Here, I've built a practice website to sharpen my web development skills.
+    It's where I first experimented with incorporating text-image AI.
 </p>
-<p>Happy learning!</p>
-
-<h2>Contributing</h2>
+<h3>First CSS</h3>
 <p>
-    This repository is for my personal learning process, so I'm not currently
-    accepting contributions. However, I appreciate any feedback or suggestions
-    you may have for me! Feel free to reach out to me through GitHub or email.
+    This folder holds my earliest attempts at using CSS to style web pages. It's
+    interesting to see how I started and how much I've progressed!
+</p>
+<h3>Games-I-Played</h3>
+<p>
+    Explore my list of games played! It's a fun project where I practice
+    organizing lists. Each game comes with its status—completed, ongoing, or
+    endless—and my personal opinions and rankings.
+</p>
+<h3>Inputs</h3>
+<p>
+    This is my playground for experimenting with HTML and CSS inputs. It's where
+    I explore different input styles and functionalities.
+</p>
+<h2>Summary</h2>
+<p>
+    This repository is where I experiment with various CSS concepts and
+    techniques. Whether I'm working on complex layouts or mastering basic
+    styling, this is where it all happens.
+</p>
+<h2>GitHub Pages Hub</h2>
+<p>
+    For an interactive experience and to see my projects live, check out the
+    <a
+        target="_new"
+        rel="noreferrer"
+        href="https://ali-sdg90.github.io/Learning-CSS-/"
+        >GitHub Pages Hub</a
+    >. It's a showcase of my work where you can explore and interact with the
+    projects firsthand.
+</p>
+<p>
+    Feel free to clone this repository and explore the code in your favorite
+    editor. Happy coding!
 </p>
