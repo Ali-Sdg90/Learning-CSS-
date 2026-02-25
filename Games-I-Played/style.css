@@ -16,7 +16,9 @@ h2 {
     font-size: 29px;
     letter-spacing: 1px;
     padding-bottom: 5px;
-    text-shadow: 2px 0 2px rgba(0, 0, 255, 0.7), -2px 0 2px rgba(255, 0, 0, 0.6);
+    text-shadow:
+        2px 0 2px rgba(0, 0, 255, 0.7),
+        -2px 0 2px rgba(255, 0, 0, 0.6);
 }
 div {
     display: flex;
