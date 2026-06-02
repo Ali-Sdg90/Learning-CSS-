@@ -7,6 +7,13 @@
         "note": "Done."
     },
     {
+        "game": "Alan Wake Remastered",
+        "status": "Not Finished",
+        "rating": 6,
+        "difficulty": "Medium",
+        "note": "Very Cool"
+    },
+    {
         "game": "Aim Lab",
         "status": "Online",
         "rating": 7,
@@ -79,8 +86,8 @@
     {
         "game": "Factorio - Space Age",
         "status": "Not Finished",
-        "rating": 8,
-        "difficulty": "Hard",
+        "rating": 9,
+        "difficulty": "Very Hard",
         "note": "Very Cool"
     },
     {
@@ -252,6 +259,13 @@
         "note": "Very Cool"
     },
     {
+        "game": "Ryse - Son of Rome",
+        "status": "Finished",
+        "rating": 4,
+        "difficulty": "Medium",
+        "note": "Done."
+    },
+    {
         "game": "Rounds",
         "status": "Endless",
         "rating": 9,
@@ -275,16 +289,23 @@
     {
         "game": "Subnautica",
         "status": "Finished",
-        "rating": 8,
+        "rating": 10,
         "difficulty": "Medium",
-        "note": "Very Cool"
+        "note": "Masterpiece"
     },
     {
         "game": "Subnautica - Below Zero",
         "status": "Finished",
-        "rating": 10,
+        "rating": 6,
         "difficulty": "Medium",
-        "note": "Masterpiece"
+        "note": "Cool"
+    },
+    {
+        "game": "Subnautica 2 - Early Access 1.0",
+        "status": "Finished",
+        "rating": 8,
+        "difficulty": "Medium",
+        "note": "Very Cool"
     },
     {
         "game": "Super Hot",
@@ -341,6 +362,13 @@
         "rating": 6,
         "difficulty": "Medium",
         "note": "Done."
+    },
+    {
+        "game": "The Stanley Parable Ultra Deluxe",
+        "status": "Finished",
+        "rating": 10,
+        "difficulty": "Easy",
+        "note": "Masterpiece"
     },
     {
         "game": "Titanfall 2",
