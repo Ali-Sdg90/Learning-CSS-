@@ -1,29 +1,37 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="stylesheet" href="./style.css" />
-        <title>G.I.P.</title>
+        <title>Games I Played — Gallery</title>
     </head>
     <body>
-        <div>
-            <table>
-                <thead>
-                    <caption>
-                        <h2>- Games I Played -</h2>
-                    </caption>
-                    <tr>
-                        <th>Games</th>
-                        <th>State</th>
-                        <th>Rating</th>
-                        <th>Difficulty</th>
-                        <th>Note</th>
-                    </tr>
-                </thead>
-                <tbody class="tbody"></tbody>
-            </table>
-        </div>
+        <header class="site-header">
+            <div class="brand">Games I Played</div>
+            <div class="controls">
+                <input id="search" placeholder="Search games, notes, status..." />
+                <select id="sort">
+                    <option value="title-asc">Title A → Z</option>
+                    <option value="title-desc">Title Z → A</option>
+                    <option value="rating-desc">Rating High → Low</option>
+                    <option value="rating-asc">Rating Low → High</option>
+                    <option value="difficulty">Difficulty</option>
+                    <option value="status">Status</option>
+                </select>
+                <button id="toggle-view" title="Toggle view">Table</button>
+                <button id="sort-file" title="Sort the JSON file (Node tool)">Sort file</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="stats">
+                <div id="count">Loading…</div>
+            </section>
+
+            <section id="grid" class="grid" aria-live="polite"></section>
+        </main>
+
         <script src="./script.js"></script>
     </body>
 </html>

@@ -1,0 +1,9 @@
+{
+    "name": "games-i-played-tools",
+    "version": "1.0.0",
+    "description": "Helper scripts for Games-I-Played",
+    "type": "commonjs",
+    "scripts": {
+        "sort-games": "node tools/sort-games.js"
+    }
+}
